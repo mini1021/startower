@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+    <p>請輸入星星數？</p>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <input type="text" name="number1" id="number" class="form-control" placeholder="輸入數字" />
+            <button type="submit" name="loginOrCancel" value="cancel" id="cancelButton" class="btn btn-default">
+        <span></span> 確定
+    </button>
+
+        </div>
+    </div>
+    <script>
+        var j = 0;
+
+        $("#cancelButton").click(
+
+
+            function() {
+                var a = $.getElementById("number").value;
+                var b = Number(a);
+                for (var i = 0; i <= b; i++) {
+                    $.write("<br>");
+
+                    for (j = 0; j < i; j++) {
+
+                        $.write("*");
+
+                    }
+
+                }
+            }
+        );
+    </script>
+
+
+
+</body>
+
+</html>
